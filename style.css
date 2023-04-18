@@ -1,1 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 
+header{
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 8px 0;
+    margin: 1px;
+}
+
+header section:last-child{
+    grid-column: 3;
+}
+
+div{
+    display: grid;
+    grid-template-rows: 10vh 1fr 10vh;
+    height: 100vh;
+}
+
+footer{
+    display: grid;
+    border: 1px solid black;
+    padding: 8px;
+    align-items: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 3fr 6fr 2fr;
+    gap: 8px;
+}
+
+.gallery{
+    display: grid;
+    padding-top: 20px;
+    grid-auto-flow: column and row;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    gap: 20px;
+}
